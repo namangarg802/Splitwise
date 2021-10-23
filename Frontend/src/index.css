@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+.bg-main {
+  background-image: url(https://assets.splitwise.com/assets/core/facets.png);
+  background-position: center 0px;
+  background-size: 1500px;
+  background-repeat: repeat-x;
+}
+.bg-down1 {
+  background-image: url(https://assets.splitwise.com/assets/core/facets.png);
+  background-position: center 0px;
+  background-size: 1000;
+
+  background-repeat: repeat-x;
+  background-color: #373b3f;
+}
+.bg-down2 {
+  background-image: url(https://assets.splitwise.com/assets/core/facets.png);
+  background-position: center 0px;
+  background-size: 1000;
+  background-repeat: repeat-x;
+  background-color: #1cc29f;
+}
+.bg-down3 {
+  background-image: url(https://assets.splitwise.com/assets/core/facets.png);
+  background-position: center 0px;
+  background-size: 1000;
+  background-repeat: repeat-x;
+  background-color: #8656cd;
+}
+.plane {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color-scheme: light only;
+  font-family: Lato;
+  -webkit-font-smoothing: auto;
+  list-style: none;
+  box-sizing: inherit;
+  border: 0 solid;
+  display: block;
+  vertical-align: middle;
+}
+.footer {
+  /* background: #F59E0D; */
+
+  /* width:100wh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.footer ul li {
+  text-decoration: none;
+  margin-left: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  color: aqua;
+}
+.footer ul li:hover {
+  color: white;
+  background: #f59e0d;
+  border-radius: 15px;
+  transition: 0.5s;
+  /* height: 200px; */
+}
+.footer p {
+  margin: 0px 50px;
+  font-family: sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 7px 13px;
+}
+.Login,
+.Signup {
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+  /* background-color: #57c6a8; */
+  height: 100%;
+}
+.form {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+.Signupform {
+  margin-left: 100px;
+}
+.Login h3 {
+  /* color: #999999; */
+  font-size: 30px;
+  margin-left: 40px;
+
+  margin-top: 40px;
+}
+.Signup h3 {
+  /* color: #999999; */
+  font-size: 30px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.Login img,
+.Signup img {
+  height: 400px;
+  width: 400px;
+  margin: 100px 40px 0px 50px;
+}
+.Login button,
+.Signup button {
+  background-color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+.navbtn1 {
+  color: #1cc29f;
+}
+.navbtn1:hover {
+  color: black;
+  /* background-color: black; */
+}
+.navbtn2 {
+  background-color: #1cc29f;
+}
+.navbtn2:hover {
+  background-color: black;
+  color: #1cc29f;
+  /* background-color: black; */
+}
+.Login button:hover,
+.Signup button:hover {
+  background-color: white;
+  color: black;
+}
+.modalbox {
+  /* background-color: white; */
+  height: 570px;
+  width: 500px;
+  margin-left: 350px;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 12%);
+  border-radius: 16px;
+}
+.loginmodalbox {
+  /* background-color: white; */
+  height: 450px;
+  width: 500px;
+  margin-left: 350px;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 12%);
+  border-radius: 16px;
+  /* background-color: #373b3f; */
+}
+
+.Login input,
+.Signup input {
+  /* border: 1px solid #cccccc; */
+  height: 42px;
+  width: 300px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 30px;
+}
+.Login input:focus {
+  border-color: cornflowerblue;
+}
