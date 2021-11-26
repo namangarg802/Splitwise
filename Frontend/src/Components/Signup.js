@@ -3,6 +3,7 @@ import "../index.css";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 import AlertContext from "./AlertContext";
+import emailjs from "emailjs-com";
 import Alert from "./Alert";
 import { isDOMComponent } from "react-dom/test-utils";
 function Signup() {
@@ -42,6 +43,21 @@ function Signup() {
     if (json.success) {
       // save auth token in local storage and redirect
       localStorage.setItem("token", json.jwttoken);
+      emailjs
+        .sendForm(
+          "service_5onvfzo",
+          "template_7mdfv33",
+          e.target,
+          "user_ZfBOvC56t2eosRA3uUc67"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       window.scrollTo(0, 0);
       showAlert("Sign up successfully", "success");
       setTimeout(() => {

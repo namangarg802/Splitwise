@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 import AlertContext from "./AlertContext";
 import { AuthContext } from "./AuthContext";
+import emailjs from "emailjs-com";
 import Alert from "./Alert";
 import "../index.css";
 function Login() {
@@ -36,6 +37,21 @@ function Login() {
       window.scrollTo(0, 0);
       localStorage.setItem("token", json.jwttoken);
       console.log(json);
+      emailjs
+        .sendForm(
+          "service_5onvfzo",
+          "template_yhhw4z3",
+          e.target,
+          "user_ZfBOvC56t2eosRA3uUc67"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       showAlert("Logged In successfully", "success");
       setTimeout(() => {
         history.push("/");

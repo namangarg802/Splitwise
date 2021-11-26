@@ -42,6 +42,7 @@ function Home() {
               </ul>
               <div className="d-flex justify-content-end">
                 <Link
+                  to="/Dashboard"
                   className="px-6 py-3 mr-4  shadow rounded-full text-white font-bold 
                   "
                   style={{ backgroundColor: "black", textDecoration: "none" }}
